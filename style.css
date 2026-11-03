@@ -266,4 +266,100 @@ footer a{
 
 .pop-up{
     display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.pop-up.show{
+    display: block;
+}
+
+.pop-up .blanket{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.pop-up .content{
+    box-sizing: border-box;
+    padding: 30px 40px;
+    width: 960px;
+    height: 500;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -480px;
+}
+
+.pop-up h2{
+    margin: 10px 0 20px;
+}
+
+.pop-up .cta{
+    margin-top: 40px;
+}
+
+.pop-up .close{
+    width: 80px;
+    height: 80px;
+    background: #FF3300 url(characters/close.png); no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.pop-up .row{
+
+}
+
+.pop-up .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pop-up .item{
+    float: left;
+    width: 415px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.pop-up .item:first-child{
+    margin-left: 0;
+}
+
+.pop-up .item label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pop-up .item input[type="text"]{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    border: 4px solid #111111;
+    height: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
 }
