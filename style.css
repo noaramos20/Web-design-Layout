@@ -115,8 +115,8 @@ nav{
     top: 0;
 }
 
-nav.logo{
-    display: black;
+nav .logo{
+    display: block;
     width: 300px;
     height: 40px;
     position: absolute; top: 50%; left: 0;
@@ -149,7 +149,8 @@ nav ul li a{
     font-weight: bold;
     color: #111111;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 35px 10px;
+    line-height: 30px;
 }
 
 .more-info{
@@ -172,3 +173,37 @@ nav ul li a{
     display: inline;
     font-weight: 800;
 }
+
+.sep{
+
+}
+
+.nb-list{
+    width: 470px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: #EDEDED;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+}
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.grey{background-color: rgba(0, 0, 0, .1);}
+.nb-list li.yellow{
+    background-color: #FFD400;
+    color: #111111;
+}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FA8072;}
