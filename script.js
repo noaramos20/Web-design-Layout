@@ -1,5 +1,3 @@
-console.log('hey there!');
-
 
 function showpop-up() {
     var pop-up = document.getElementById('pop-up')
